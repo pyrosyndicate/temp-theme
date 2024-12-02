@@ -1,0 +1,750 @@
+@charset "utf-8";
+/* CSS Document */
+
+.closepop a,
+.nxl-filter li,
+.closepop a:after,
+.nx-demolist .intropop-bottom a {
+	transition-property: all;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;	
+}
+.nx-intropopouter {
+	display: block; 
+	position: fixed; 
+	z-index: 100000001; 
+	top: 0px; 
+	left: 0px; 
+	bottom: 0px; 
+	right: 0px; 
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.32);
+}
+
+.nx-intropopouter * {
+	box-sizing: border-box;	
+}
+
+.nx-intropopwrap {
+	display: block;
+	width: 600px;
+	position: absolute;
+	z-index: 100000002; 	
+	left: 25%;
+	left: calc(50% - 300px);
+	background-color: #FFF;
+	color: #333;
+	padding: 16px;
+	top: 50%;
+  	transform: translateY(-50%);
+	
+	transition-property: all;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+	
+	box-shadow: 0 2px 12px rgba(0,0,0,0.24);
+	border-radius: 6px;
+}
+
+.nx-demolist .nx-intropopouter .nx-intropopwrap {
+	display: block;
+	width: 90%;
+	position: absolute;
+	z-index: 100000002; 	
+	left: 5%;
+	background-color: #FFF;
+	color: #333;
+	padding: 32px;
+	top: 5%;
+	height: 88%;
+	max-height: 88%;
+  	transform: none;
+	box-sizing: border-box;
+}
+
+.btn-wrap {
+	margin-top: 24px;
+}
+
+.btn-wrap .nx-tx-activation {
+	display: block;
+	float: right;
+}
+
+.btn-wrap .never-show.button-hero {
+	background-color: #CCC;
+	border: 1px solid #999;
+}
+
+.btn-wrap .never-show.button-hero:hover {
+	background-color: #ddd;
+}
+
+.btn-wrap .nx-tx-activation .install-nx-now.button-hero {
+	background-color: #a42c81;
+	color: #FFFFFF;
+	border: 1px solid #630047;
+	text-transform: capitalize;
+	font-weight: 600;
+}
+
+.btn-wrap .nx-tx-activation .install-nx-now.button-hero:hover {
+	background-color: #89216B;
+}
+
+
+.nx-demolist .popdemogallery {
+	margin-top: 32px;
+	display: block;
+	max-height: 50%;
+	overflow: scroll;
+	overflow-x: hidden;
+	position: relative;
+	
+	width: 102%;
+	margin-left: -1%;
+	margin-right: -1%;
+}
+
+.nx-demolist .popdemolist {
+	display: block;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+.nx-demolist .popdemolist li {
+	display: block;
+	float: left;
+	margin: 1%;
+	padding: 0px;
+	width: 18%;
+	border-radius: 4px;
+	-webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.24);
+	-moz-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.24);
+	box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.24);
+	overflow: hidden;
+	position: relative;	
+	
+	background-color: #fff;
+	color: #333;
+
+}
+
+.nx-demolist .popdemolist li img {
+	display: block;
+	width: 102%;
+	position: relative;
+	z-index: 100000006; 	
+	left: -1%;
+	top: -1%;
+}
+
+.nx-demolist .popdemolist li .popitemfooter {
+	display: block;
+	position: relative;
+	z-index: 100000007;
+	width: 100%;
+	padding: 6px 12px;
+	text-align: right;
+}
+
+.nx-demolist .popdemolist li .popitemfooter .txoc-thumb-title {
+	display: block;
+	float: left;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1;
+	padding-top: 10px;
+}
+
+.nx-demolist .popdemolist li .popitemfooter .button-primary {
+	margin-left: 12px;
+}
+
+li.nx-premium:after {
+	position: absolute;
+	content: "PRO";
+	font-size: 15px;
+	line-height: 15px;
+	padding: 4px 12px;
+	color: #FFF;
+	background-color: #89216b;
+	
+	right: 0px;
+	bottom: 72px;
+	z-index: 100000009;
+	font-weight: 700;
+	-webkit-box-shadow: -1px 0px 2px 2px rgba(0,0,0,0.32);
+	-moz-box-shadow: -1px 0px 2px 2px rgba(0,0,0,0.32);
+	box-shadow: -1px 0px 2px 2px rgba(0,0,0,0.32);
+}
+
+li.nx-elementor:before,
+li.nx-wpbakery-page-builder:before,
+li.nx-siteorigin-page-builder:before {
+	position: absolute;
+	content: "Elementor";
+	font-size: 13px;
+	line-height: 13px;
+	padding: 4px 12px;
+	color: #373737;
+	background-color: rgba(255,255,255,0.64);
+	
+	right: 0px;
+	bottom: 48px;
+	z-index: 100000010;
+	font-weight: 600;
+	
+	-webkit-box-shadow: -1px 0px 2px 2px rgba(0,0,0,0.32);
+	-moz-box-shadow: -1px 0px 2px 2px rgba(0,0,0,0.32);
+	box-shadow: -1px 0px 2px 2px rgba(0,0,0,0.32);	
+	background-color: #d94453;
+	color: #FFF;
+} 
+
+li.nx-wpbakery-page-builder:before {
+	content: "WPBakery Page Builder";
+} 
+
+li.nx-siteorigin-page-builder:before {
+	content: "SiteOrigin Page Builder";
+} 
+
+
+p.ocdi__ajax-loader {
+	font-size: 1.5em;
+	display: none;
+}
+
+.ocdi__ajax-loader .spinner {
+	display: inline-block;
+	float: none;
+	visibility: visible;
+	margin-bottom: 6px;
+}
+
+.ocdi-reqplug {
+	display: block; 
+	height: 32px;
+	line-height: 32px;
+	padding: 6px 0px 0px 0px;
+	text-align: right;
+	clear: both;
+}
+
+.ocdi-reqplug:after {
+	display: block;
+	height: 0px;
+	content: "";
+	clear: both;
+}
+
+.ocdi-reqplug a.disabled {
+	position: relative;
+	padding-right: 48px;
+}
+
+.ocdi-reqplug a.disabled:after {
+	font-family: dashicons;
+	position: absolute;
+	display: block;
+	content: "\f147";
+	right: 16px;
+	top: 2px;
+	font-size: 24px;
+	line-height: 24px;
+	color: #7ad124;
+}
+
+.ocdi-reqplug .reqplugin-title {
+	display: block;
+	float: left;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.tx-ocdi-item-footer {
+	display: block;
+	clear: both;
+	padding: 16px 0px 0px 0px;
+	text-align: right;
+}
+
+.tx-ocdi-item-footer a.button {
+}
+
+/* tx install */
+.nx-install-tx .nx-intropopwrap {
+	background-image: url(../images/stage1bg.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 100% auto;
+}
+
+.nx-intropopwrap .notice-success {
+	margin-left: 0px;
+}
+
+.install-tx {
+	display: block;
+	min-height: 400px;
+	color: #454545;
+	text-align: center;
+}	
+
+.install-tx h1 {
+	color: #454545;
+	font-weight: 600;
+}
+
+.install-tx h4 {
+	color: #565656;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.install-tx ul {
+	display: block;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;	
+}
+
+.txoc-stage1 ul li {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	line-height: 24px;
+	font-size: 14px;
+	
+	display: inline-block;
+	width: 49%;
+	padding-left: 32px;
+	position: relative;
+}
+
+.txoc-stage1 ul li:after {
+	font-family: dashicons;
+	position: absolute;
+	display: block;
+	content: "\f147";
+	left: 6px;
+	top: 2px;
+	font-size: 24px;
+	line-height: 24px;
+	color: #F60;
+}
+
+.nx-import-pkg {
+	display: block;
+	clear: both;
+}
+
+.wp-full-overlay.section-open .nx-import-pkg,
+.wp-full-overlay.in-sub-panel .nx-import-pkg {
+	display: none;
+}
+
+.nx-import-pkg a {
+	display: block;
+	clear: both;
+	background-color: #900;
+	color: #FFF;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	padding: 12px;
+	background: #DA4453;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+}
+
+.tx-promo-panel a {
+	background: #DA4453;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+}
+
+.nx-demolist .nx-intropopwrap {
+	background: #DA4453;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */	
+}
+
+.demolist-head {
+	display: block;
+	color: #FFF;
+	text-align: center;
+}
+
+.demolist-head h1 {
+	font-size: 40px;
+	color: #FFF;
+	font-weight: 700;
+}
+
+.demolist-head h4 {
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+ul.nxl-filter {
+	display: block;
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+	min-height: 32px;
+	list-style-type: none;
+	text-align: center;
+	margin-bottom: 24px;
+	
+	background-color: rgba(255,255,255, 0.12);
+	width: 100%;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+ul.nxl-filter li {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	border: 1px solid #FFF;
+	border: 1px solid rgba(255,255,255,0.64);
+	font-size: 13px;
+	line-height: 1;
+	padding: 8px 16px;
+	color: #FFF;
+	cursor: pointer;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+ul.nxl-filter li:hover {
+	background-color: #c42766;
+	border: 1px solid rgba(255,255,255,1);	
+}
+
+ul.nxl-filter li.active {
+	background-color: #c42766;
+	border: 1px solid rgba(255,255,255,1);	
+}
+
+.nx-demolist .intropop-bottom {
+	display: block;
+	padding-top: 16px;
+}
+
+.nx-demolist .intropop-bottom a {
+	background-color: #C60;
+	color: #FFF;
+	border-color: rgba(255,255,255, 0.64);
+	font-weight: 600;
+}
+
+.index-php .never-show {
+	display: none;
+}
+
+.nxd-free {}
+.nxd-premium {}
+
+.stage3-imgwrap {
+	display: block;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	height: 300px;
+}
+
+.stage3-label {
+	display: block;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	height: 48px;
+	background-color: rgba(255,255,255,0.72);
+	font-size: 18px;
+	line-height: 48px;
+	font-weight: 600;
+	padding: 0px 12px;
+	text-transform: capitalize;
+	
+	background-color: #575757;
+	color: #FFF;
+	
+}
+
+.stage3-label-name {
+	color: #89216B;
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.fimp-notice,
+.fimp-notice ul {
+	background-color: #575757;
+	color: #FFF;	
+}
+
+.fimp-notice ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	margin-top: 0px;
+	margin-bottom: 16px;
+	
+	padding-top: 0px;
+	padding-bottom: 24px;
+}
+
+.fimp-notice ul li {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	padding-left: 32px;
+	line-height: 24px;
+	position: relative;	
+}
+
+.fimp-notice ul li:after {
+	font-family: dashicons;
+	position: absolute;
+	display: block;
+	content: "\f147";
+	left: 6px;
+	top: 2px;
+	font-size: 20px;
+	line-height: 24px;
+	color: #999;
+}
+
+.fimp-notice {}
+.fimp-notice h4 {
+	font-size: 20px;
+	font-weight: 600;
+	margin: 6px 0px 12px 0px;
+}
+
+.wp-core-ui .tx-ocdi-item-footer .button.go-prem,
+.wp-core-ui .tx-ocdi-item-footer .install-all-txoc {
+	background-color: #a42c81;
+	color: #FFFFFF;
+	border: 1px solid #630047;
+	text-transform: capitalize;
+	font-weight: 600;
+	box-shadow: 0 2px 0 #750a56!important;
+	text-shadow: 0 -1px 1px #750a56,1px 0 1px #750a56,0 1px 1px #750a56,-1px 0 1px #750a56;	
+}
+
+.wp-core-ui .tx-ocdi-item-footer .button.go-prem:hover,
+.wp-core-ui .tx-ocdi-item-footer .install-all-txoc:hover {
+	background-color: #89216B;
+}
+
+.closepop {
+	display: block;
+	position: relative;
+}
+
+.closepop a {
+	display: block;
+	height: 20px;
+	width: 20px;
+	border-radius: 5px;
+	position: absolute;
+	right: -6px;
+	top: -24px;
+	background-color: #FFF;
+	background-color: rgba(255,255,255,0.72);
+}
+
+.closepop a:hover {
+	background-color: rgba(255,255,255,1);
+}
+
+.closepop a:after {
+	font-family: dashicons;
+	position: absolute;
+	display: block;
+	content: "\f335";
+	left: 0px;
+	top: 0px;
+	font-size: 20px;
+	line-height: 20px;
+	color: #942569;
+}
+
+.closepop.popstage2 a {
+	right: -12px;
+	top: -38px;
+}
+
+
+.closepop.popstage3 a {
+	display: block;
+	height: 28px;
+	width: 28px;
+	border-radius: 14px;
+	position: absolute;
+	right: -28px;
+	top: -28px;
+	background-color: #FFF;
+	z-index: 100000008;
+	border: 1px solid rgba(0,0,0,0.32);
+}
+
+.closepop.popstage3 a:hover {
+}
+
+.closepop.popstage3 a:after {
+	font-family: dashicons;
+	position: absolute;
+	display: block;
+	content: "\f335";
+	left: 1px;
+	top: 1px;
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 600;
+	color: #942569;
+}
+
+body .tx-ocdi-item-footer .ocdi__ajax-loader.js-ocdi-ajax-loader {
+	text-align: left;
+	font-size: 18px;
+}
+
+.tx-ocdi-item-footer .ocdi__ajax-loader .spinner {
+	background-size: 24px 24px;
+	opacity: .72;
+	width: 24px;
+	height: 24px;
+}
+
+.fprem-notice {
+	display: block;
+	background-color: #eee;
+	margin: 0px;
+	padding: 26px 12px;
+	color: #373737;
+	font-weight: 500;
+}
+
+.fprem-notice h4 {
+	font-size: 16px;
+	margin: 0px;
+}
+
+.fprem-notice h4 a {
+	color: #333;
+}
+
+.fprem-notice h4 a:hover {
+	text-decoration: none;
+	color: #232323;
+}
+
+.js-ocdi-ajax-response {
+	max-height: 200px;
+	overflow-y: auto;	
+}
+
+.txoc-sitelink {
+	padding: 6px 0px 0px 0px;
+	text-align: right;
+}
+.txoc-sitelink .button {
+	margin-left: 12px;
+}
+
+.ocdi-reqplug-wrap {
+	display: block;
+	padding-bottom: 6px;
+	position: relative;
+}
+
+.ocdi-reqplug-wrap:after {
+	display: block;
+	position: absolute;
+	content: " ";
+	left: 0px;
+	top: 32px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.intropop-top {
+	position: relative;
+}
+.howtoimport {
+	display: block;
+	width: 300px;
+	height: 55px;
+	position: absolute;
+	left: 50%;
+	bottom: 48px;
+	background-image: url(../images/howto.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	margin-left: -150px;
+	
+	transition-property: none;
+	transition-duration: 0s;	
+}
+
+.howtoimport:hover {
+	background-position: 0px -55px;	
+}
+
+.ocdi-reqplug .button,
+.nx-ocdi-install .button,
+.nx-tx-activation .button {
+	border: none!important;
+	box-shadow: none!important;
+}
+
+
+
+@media only screen and (max-width: 1500px) {
+	.nx-demolist .popdemolist li {
+		margin: 2%;
+		width: 29%;
+	}
+
+	.nx-demolist .popdemogallery {
+		width: 102%;
+		margin-left: -1%;
+		margin-right: -1%;
+	}
+	
+}
+
+@media only screen and (max-width: 968px) {
+	.nx-demolist .popdemolist li {
+		margin: 3%;
+		width: 44%;
+	}
+	.nx-demolist .popdemogallery {
+		width: 100%;
+		margin-left: 0%;
+		margin-right: 0%;
+	}	
+}
+
+@media only screen and (max-width: 560px) {
+	.nx-demolist .popdemolist li {
+		margin: 0%;
+		margin-bottom: 32px;
+		width: 100%;
+	}
+}
